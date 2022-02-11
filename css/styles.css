@@ -1,0 +1,421 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #defbff;
+
+}
+
+nav{
+  position:fixed;
+  width:100%;
+  padding:20px 0;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+nav.sticky{
+  background: #9dbfed;
+  padding:13px 0;
+}
+nav .navbar{
+  width:90%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:auto;
+}
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: white;
+}
+
+nav.sticky .navbar .logo a{
+  color: #020126;
+}
+
+nav .navbar .menu{
+  display:flex;
+  position:relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin:0 8px;
+}
+nav .navbar .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding:6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+  color: #020126;
+}
+nav.sticky .menu a{
+  color: #020126;
+}
+nav.sticky .menu a:hover{
+  color: white;
+}
+
+
+
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position:absolute;
+  color: #defbff;
+  right:30px;
+  top:20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: #020126;
+}
+nav.sticky .menu-btn{
+  color: #defbff;
+}
+.navbar .menu .menu-btn{
+  color: #defbff;
+}
+
+
+.home{
+  height:100vh;
+  width:100%;
+  background: url("sky4.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: inherit;
+}
+.home .home-content{
+  width:90%;
+  height:100%;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one{
+  font-size:25px;
+  color: #020126;
+}
+
+.home .text-title{
+  font-size: 40px;
+  margin:5px 0;
+  color: #020126;
+}
+.home .text-title-span{
+  font-size: 45px;
+  margin:5px 0;
+  color: #020126;
+  font-weight: 500;
+}
+.home .button{
+  margin:14px 0;
+}
+.home .button button{
+  outline:none;
+  padding:8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background:#020126;
+  color: #defbff;
+  cursor:pointer;
+  border:2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover{
+  border-color: #020126;
+  background-color: #defbff;
+  color: #020126;
+}
+
+
+section{
+  padding-top:40px;
+}
+section .content{
+  width:80%;
+  margin:40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+section .title{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color: #020126;
+  font-size: 35px;
+  font-weight: 500;
+  position:relative;
+  padding-bottom:8px;
+}
+section .title span {text-decoration: underline;}
+.about .about-details{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.about .about-details .left{
+  width:45%;
+}
+
+.about .left img{
+  height:400px;
+  width:400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about .left .img2{
+  margin-left: 55px;
+}
+.about .about-details .right{
+  width:55%;
+}
+
+.about-details .right p{
+  text-align: justify;
+  color: #020126;
+
+}
+
+section .topic{
+  color: #020126;
+  font-size:25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+section .button{
+  margin:16px 0;
+}
+section .button button{
+  outline:none;
+  padding:8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #020126;
+  color: #defbff;
+  border:2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #020126;
+  background-color: #defbff;
+  color: #020126;
+}
+
+
+.services .boxes{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content:space-between;
+}
+.services .boxes .box a{
+  color: #307a9c;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.services .boxes .box{
+  margin:20px 0;
+  width:calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding:30px 10px;
+  box-shadow: 0 2px 3px #949da8;
+  cursor:default;
+  transition: all 0.3s ease;
+}
+.services .boxes .box:hover{
+  background: #020126;
+  color: #defbff;
+}
+.services .boxes .box .icon{
+  height:50px;
+  width:50px;
+  background: #020126;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #defbff;
+  margin:0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon{
+  background: #defbff;
+  color: #020126;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #defbff;
+  transition: all 0.4s ease;
+}
+
+.contact{
+  background: #defbff;
+}
+.contact .content{
+  margin:0 auto;
+  padding:30px 0;
+}
+.contact .text{
+  width:80%;
+  text-align: center;
+  margin:auto;
+}
+.media-icons a{
+  color: #020126;
+  font-size: 22px;
+  margin:0 6px;
+}
+.media-icons{
+background: #defbff;
+text-align: center;
+padding-bottom: 40px;
+}
+
+footer .text{
+
+  background: #020126;
+  padding:15px 0;
+  text-align: center;
+
+}
+footer p{
+  padding: 1px;
+  font-size: 18px;
+  color: #defbff;
+  text-align: center;
+  display:inline;
+  font-family: 'Poppins', sans-serif;}
+
+  @media (max-width:1000px){
+    .about .about-details{
+      justify-content: center;
+      flex-direction: column;
+    }
+    .about .about-details .left{
+      display: flex;
+      justify-content:center;
+      width:100%;
+    }
+    .about .about-details .right{
+      width:90%;
+      margin:40px 0;
+    }
+    .services .boxes .box{
+      margin:20px 0;
+      width:calc(100% / 2 - 20px);
+    }
+  }
+  @media (max-width:900px){
+    .about .left img{
+      height:350px;
+      width:350px;
+    }
+  }
+  @media (max-width:750px){
+     nav .navbar{
+       width:90%;
+     }
+     nav .navbar .menu{
+       position:fixed;
+       left:-100%;
+       top:0;
+       background: #020126;
+       height:100vh;
+       max-width: 400px;
+       width:100%;
+       padding-top:60px;
+       flex-direction: column;
+       align-items:center;
+       transition: all 0.5s ease;
+     }
+     .navbar.active .menu{
+       left:0;
+     }
+     nav .navbar .menu a{
+       font-size:23px;
+       display:block;
+       color: #defbff;
+       margin:10px 0;
+     }
+     nav.sticky .menu a:hover{
+       color: #020126;
+     }
+     nav .navbar .media-icons{
+       display:none;
+     }
+     nav .menu-btn,
+     .navbar .menu .cancel-btn{
+       display:block;
+     }
+
+     .home .text-two{
+       font-size: 65px;
+     }
+     .home .text-three{
+      font-size: 35px;
+    }
+
+    .skills .skills-details{
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .skills-details .text{
+      width:100%;
+      margin-bottom:50px;
+    }
+    .skills-details .boxes{
+      justify-content:center;
+      align-items: center;
+      width:100%;
+    }
+
+    .services .boxes .box{
+      margin:20px 0;
+      width:100%;
+    }
+
+    .contact .text{
+      width:100%;
+    }
+  /*dodano img2*/
+  .about .left .img2{
+    margin-left: 0;
+  }
+  }
+
+  @media (max-width:500px){
+    .home .text-two{
+      font-size: 55px;
+    }
+    .home .text-three{
+      font-size: 33px;
+    }
+
+    .skills-details .boxes .per{
+      font-size: 50px;
+      color: #020126;
+    }
+  }
